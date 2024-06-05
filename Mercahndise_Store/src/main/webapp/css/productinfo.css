@@ -1,0 +1,102 @@
+/* General Container for the Product */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 450px;
+    margin: 20px;
+}
+
+.product-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Carousel Container */
+.image-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Product Description */
+.product-description {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.product-description h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-description p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.product-description .price {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.product-description button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-description button:hover {
+    background-color: #d35400;
+}
